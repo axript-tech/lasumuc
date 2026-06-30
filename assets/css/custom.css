@@ -1,0 +1,82 @@
+/* Custom CSS for LASUMUC */
+
+/* Base font adjustments for Quran */
+.quran-text {
+    font-family: 'Mirza', serif;
+    font-size: 2.5rem;
+    line-height: 2.2;
+    text-align: right;
+    direction: rtl;
+    color: #0A192F;
+}
+
+.quran-translation {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #334155; 
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background: #f8f9fa; 
+}
+::-webkit-scrollbar-thumb {
+    background: #D32F2F; 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #0A192F; 
+}
+
+/* Glassmorphism effects */
+.glass {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 8px 32px 0 rgba(10, 25, 47, 0.05);
+}
+
+.glass-dark {
+    background: rgba(10, 25, 47, 0.85);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(248, 188, 44, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* Micro-animations */
+.hover-scale {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hover-scale:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px -5px rgba(10, 25, 47, 0.1);
+    border-color: rgba(248, 188, 44, 0.3);
+}
+
+/* Gradient Text Utilities */
+.text-accent-gradient {
+    background: linear-gradient(to right, #059669, #10B981);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.text-gold-gradient {
+    background: linear-gradient(to right, #047857, #059669);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.text-emerald-gradient {
+    background: linear-gradient(to right, #059669, #10B981);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
